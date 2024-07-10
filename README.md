@@ -4,14 +4,14 @@
 
 VMware workstation, specifically the ```vmware-vdiskmanager.exe``` file.
 
-## Instructions
+# Instructions
 
 > [!NOTE]
 > 1. If you have changed the directories mentioned below from their default installations (```C:\LDPlayer\LDPlayer9``` and ```C:\Program Files (x86)\VMware\VMware Workstation```), please refer to the [Manual version](#manual-version) of the instructions and ensure that you update the commands accordingly.
 > 2. You can also [Edit the batch files](#editing-batch-files) and replace directories with your own.
 > 3. If you have not changed the directories, please refer to the [Batch (.bat) files version](#batch-bat-files-version).
 
-### Batch (.bat) files version
+## Batch (.bat) files version
 
 > Please note, this process only applies if you have installed the programs in their default installation locations.
 
@@ -25,7 +25,7 @@ VMware workstation, specifically the ```vmware-vdiskmanager.exe``` file.
 The vmdk should shrink. If you think it did not shrink enough try repeating the steps again. If you get any errors try the manual version.
 
 
-### Manual version
+## Manual version
 
 > - I'm not sure if it works ideally but you can try skipping to step 13. If that does not work then try the doing steps from the beginning.
 > - You can also refer to [Editing batch files](#editing-batch-files) to make your own batch files
@@ -53,6 +53,10 @@ The vmdk should shrink. If you think it did not shrink enough try repeating the 
 
 > Instead of following the steps in the [Manual version](#manual-version), you can edit the paths in the batch files.
 
-* In the ```StorageClear.bat``` file, replace ```C:\LDPlayer\LDPlayer9``` with the path to your LDPlayer installation (if there are spaces dont forget the double quotes (ex: ```C:\Path to\LDPlayer``` would be  ```"C:\Path to\LDPlayer"```).
-* In the ```Shrink.bat``` file, replace ```"C:\Program Files (x86)\VMware\VMware Workstation\vmware-vdiskmanager.exe"``` with the path to your ```vmware-vdiskmanager.exe``` file.
-* In the ```Shrink.bat``` file, replace ```"C:\LDPlayer\LDPlayer9\vms\leidian1\sdcard.vmdk"``` with the path to 
+### StorageClear.bat file 
+* Replace ```C:\LDPlayer\LDPlayer9``` with the path to your LDPlayer installation (if there are spaces dont forget the double quotes (ex: ```C:\Path to\LDPlayer``` would be  ```"C:\Path to\LDPlayer"```).
+
+### Shrink.bat file
+* For VMWare you should replace ```"C:\Program Files (x86)\VMware\VMware Workstation\vmware-vdiskmanager.exe"``` with the path to your ```vmware-vdiskmanager.exe``` file.
+*  For LDPlayer you should replace ```C:\LDPlayer\LDPlayer9\vms\leidian``` with the path to your LDPlayer vms (NOTE: \LDPlayer\LDPlayer9\vms\leidian is unchangeable. This means that, say you installed LDPlayer in your downloads folder, your path should be ```C:\Users\YOUR-USERNAME\Downloads\LDPlayer\LDPlayer9\vms\leidian``` (of course YOUR-USERNAME should be replaced with your username)).
+* Make sure to set the LDPlayer path with no double quotes since it is getting added in the end.
