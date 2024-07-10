@@ -7,7 +7,7 @@ VMware workstation, specifically the ```vmware-vdiskmanager.exe``` file.
 ## Instructions
 
 > [!NOTE]
-> If you have changed the directories mentioned below from their default installations (```C:\LDPlayer\LDPlayer9``` and ```C:\Program Files (x86)\VMware\VMware Workstation```), please refer to the [Manual version](https://github.com/badjtsx/ShrinkLDPlayer/edit/main/README.md#manual-version) of the instructions and ensure that you update the commands accordingly.
+> If you have changed the directories mentioned below from their default installations (```C:\LDPlayer\LDPlayer9``` and ```C:\Program Files (x86)\VMware\VMware Workstation```), please refer to the [Manual version](https://github.com/badjtsx/ShrinkLDPlayer?tab=readme-ov-file#manual-version) of the instructions and ensure that you update the commands accordingly.
 > If you have not changed the directories, please refer to the [batch files version](https://github.com/badjtsx/ShrinkLDPlayer/edit/main/README.md#batch-bat-files-version).
 
 ### Batch (.bat) files version
