@@ -11,8 +11,8 @@ VMware workstation, specifically the ```vmware-vdiskmanager.exe``` file.
 
 1. Launch the LDPlayer instance you want to shrink
 2. In "Settings > Other settings > ADB debugging" choose "Open local connetion"
-3. Without closing the launcher, run cmd/powershell
-4. Change directory to where LDPlayer is installed (cd C:\LDPlayer\LDPlayer9)
+3. Without closing the launcher, open cmd/powershell
+4. Change directory to where LDPlayer is installed using ```cd C:\LDPlayer\LDPlayer9```
 5. Run the command "```adb devices```" (cmd) or "```.\adb devices```" (powershell). If the output lists a device (emulator-5556   device) then you're good to go if not make sure step 2 is done and the LDPlayer instance is Launched
 6. Run "```adb shell```" (cmd) or "```.\adb shell```" (powershell)
 7. Go into superuser using ```su```
