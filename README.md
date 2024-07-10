@@ -14,7 +14,7 @@ VMware workstation, specifically the ```vmware-vdiskmanager.exe``` file.
 3. Without closing the launcher, open cmd/powershell
 4. Change directory to where LDPlayer is installed using ```cd C:\LDPlayer\LDPlayer9```
 5. Run the command ```adb devices``` (cmd) or ```.\adb devices``` (powershell). If the output lists a device (emulator-5556   device) then you're good to go if not make sure step 2 is done and the LDPlayer instance is Launched
-6. Run "```adb shell```" (cmd) or "```.\adb shell```" (powershell)
+6. Run ```adb shell``` (cmd) or ```.\adb shell``` (powershell)
 7. Go into superuser using ```su```
 8. Change directory to sdcard using ```cd /sdcard```
 9. Create a file filled with zeros using ```dd if=/dev/zero of=fillfile bs=1048576 count=1024```
