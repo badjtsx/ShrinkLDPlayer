@@ -13,22 +13,24 @@ VMware workstation, specifically the ```vmware-vdiskmanager.exe``` file.
 
 ## Batch (.bat) files version
 
-> Please note, this process only applies if you have installed the programs in their default installation locations.
+> - Please note, this process only applies if you have installed the programs in their default installation locations.
+> - The vmdk should shrink by 1GB. If you want to shrink it more, you can increase the count in Clear.bat from 1024 (1GB) to a bigger number (You can go overboard, it won't delete files you never deleted).
 
 1. Launch the LDPlayer instance you want to shrink.
 2. In "Settings > Other settings > ADB debugging" choose "Open local connection".
-3. Without closing the emulator, run ```StorageClear.bat```.
+3. Without closing the emulator, run ```StorageClear.bat```. 
 4. Figure out the ID of the LDPlayer instance you want to shrink by going to LDMultiPlayer and checking the IDs.
 ![Screenshot (161)](https://github.com/badjtsx/ShrinkLDPlayer/assets/90721515/2c298fe9-5182-40b0-965c-7e8b0410ee4d)
-6. Close LDPlayer completely and run ```Shrink.bat```, it'll ask for the ID acquired in the previous step, 
+6. Close LDPlayer completely and run ```Shrink.bat```, it'll ask for the ID acquired in the previous step. 
 
-The vmdk should shrink. If you think it did not shrink enough try repeating the steps again. If you get any errors try the manual version.
+If you get any errors, maybe try the manual version.
 
 
 ## Manual version
 
 > - I'm not sure if it works ideally but you can try skipping to step 13. If that does not work then try the doing steps from the beginning.
 > - You can also refer to [Editing batch files](#editing-batch-files) to make your own batch files
+> - The vmdk should shrink by 1GB. If you want to shrink it more, you can increase the count in Clear.bat from 1024 (1GB) to a bigger number (You can go overboard, it won't delete files you never deleted).
 
 1. Launch the LDPlayer instance you want to shrink.
 2. In "Settings > Other settings > ADB debugging" choose "Open local connetion".
@@ -47,7 +49,7 @@ The vmdk should shrink. If you think it did not shrink enough try repeating the 
 15. Inside of that instance folder there will be three vmdk files, we'll have to shrink the sdcard.vmdk one using ```vmware-vdiskmanager.exe``` which is available in the vmware workstation directory ```C:\Program Files (x86)\VMware\VMware Workstation```.
 16. Open cmd or powershell and change directory to where ```vmware-vdiskmanager.exe``` is and run ```vmware-vdiskmanager.exe -k "C:\LDPlayer\LDPlayer9\vms\leidian1\sdcard.vmdk"``` (cmd) or ```.\vmware-vdiskmanager.exe -k "C:\LDPlayer\LDPlayer9\vms\leidian1\sdcard.vmdk"``` (powershell).
 
-The vmdk should shrink. If you think it did not shrink enough try repeating the steps again. Refer to [Editing Batch files](#editing-batch-files)
+Refer to [Editing Batch files](#editing-batch-files) to make your own batch files.
 
 ## Editing Batch files
 
@@ -55,6 +57,7 @@ The vmdk should shrink. If you think it did not shrink enough try repeating the 
 
 ### StorageClear.bat file 
 * Replace ```C:\LDPlayer\LDPlayer9``` with the path to your LDPlayer installation (if there are spaces dont forget the double quotes (ex: ```C:\Path to\LDPlayer``` would be  ```"C:\Path to\LDPlayer"```).
+* You can replace 1024 in ```count=1024``` with a bigger number to clear more space (You can go overboard, it won't delete files you never deleted).
 
 ### Shrink.bat file
 * For VMWare you should replace ```"C:\Program Files (x86)\VMware\VMware Workstation\vmware-vdiskmanager.exe"``` with the path to your ```vmware-vdiskmanager.exe``` file.
