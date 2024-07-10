@@ -7,8 +7,9 @@ VMware workstation, specifically the ```vmware-vdiskmanager.exe``` file.
 ## Instructions
 
 > [!NOTE]
-> If you have changed the directories mentioned below from their default installations (```C:\LDPlayer\LDPlayer9``` and ```C:\Program Files (x86)\VMware\VMware Workstation```), please refer to the [Manual version](#manual-version) of the instructions and ensure that you update the commands accordingly.
-> If you have not changed the directories, please refer to the [Batch (.bat) files version](#batch-bat-files-version).
+> 1. If you have changed the directories mentioned below from their default installations (```C:\LDPlayer\LDPlayer9``` and ```C:\Program Files (x86)\VMware\VMware Workstation```), please refer to the [Manual version](#manual-version) of the instructions and ensure that you update the commands accordingly.
+> 2. You can also [Edit the batch files](#editing-batch-files) and replace directories with your own.
+> 3. If you have not changed the directories, please refer to the [Batch (.bat) files version](#batch-bat-files-version).
 
 ### Batch (.bat) files version
 
@@ -42,8 +43,8 @@ The vmdk should shrink. If you think it did not shrink enough try repeating the 
 15. Inside of that instance folder there will be three vmdk files, we'll have to shrink the sdcard.vmdk one using ```vmware-vdiskmanager.exe``` which is available in the vmware workstation directory ```C:\Program Files (x86)\VMware\VMware Workstation```.
 16. Open cmd or powershell and change directory to where ```vmware-vdiskmanager.exe``` is and run ```vmware-vdiskmanager.exe -k "C:\LDPlayer\LDPlayer9\vms\leidian1\sdcard.vmdk"``` (cmd) or ```.\vmware-vdiskmanager.exe -k "C:\LDPlayer\LDPlayer9\vms\leidian1\sdcard.vmdk"``` (powershell).
 
-The vmdk should shrink. If you think it did not shrink enough try repeating the steps again. Refer to [Editing Batch files](https://github.com/badjtsx/ShrinkLDPlayer/edit/main/README.md#editing-batch-files)
+The vmdk should shrink. If you think it did not shrink enough try repeating the steps again. Refer to [Editing Batch files](#editing-batch-files)
 
 ## Editing Batch files
 
-
+Instead of having to repeat the 
