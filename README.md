@@ -16,7 +16,7 @@ VMware workstation, specifically the ```vmware-vdiskmanager.exe``` file.
 > Please note, this process only applies if you have installed the programs in their default installation locations.
 
 1. Launch the LDPlayer instance you want to shrink.
-2. In "Settings > Other settings > ADB debugging" choose "Open local connection".
+2. In "Settings > Other settings > ADB debugging" choose "Open local connection" (You should probably close it on other instances).
 3. Without closing the emulator, run ```StorageClear.bat```.
 4. Figure out the ID of the LDPlayer instance you want to shrink by going to LDMultiPlayer and checking the IDs.
 ![Screenshot (161)](https://github.com/badjtsx/ShrinkLDPlayer/assets/90721515/2c298fe9-5182-40b0-965c-7e8b0410ee4d)
@@ -31,7 +31,7 @@ The vmdk should shrink. If you think it did not shrink enough try repeating the 
 > - You can also refer to [Editing batch files](#editing-batch-files) to make your own batch files
 
 1. Launch the LDPlayer instance you want to shrink.
-2. In "Settings > Other settings > ADB debugging" choose "Open local connetion".
+2. In "Settings > Other settings > ADB debugging" choose "Open local connetion" (You should probably close it on other instances).
 3. Without closing the emulator, open cmd/powershell.
 4. Change directory to where LDPlayer is installed using ```cd C:\LDPlayer\LDPlayer9```.
 5. Run the command ```adb devices``` (cmd) or ```.\adb devices``` (powershell). If the output lists a device (emulator-5556   device) then you're good to go if not make sure step 2 is done and the LDPlayer instance is Launched.
@@ -51,7 +51,7 @@ The vmdk should shrink. If you think it did not shrink enough try repeating the 
 
 ## Editing Batch files
 
-> Instead of following the steps in the [Manual version](#manual-version), you can edit the paths in the batch files.
+> Instead of following the steps in the [Manual version](#manual-version), you can edit the paths in the batch files and use the [Batch (.bat) files version](#batch-bat-files-version) instead.
 
 ### StorageClear.bat file 
 * Replace ```C:\LDPlayer\LDPlayer9``` with the path to your LDPlayer installation (if there are spaces dont forget the double quotes (ex: ```C:\Path to\LDPlayer``` would be  ```"C:\Path to\LDPlayer"```).
