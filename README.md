@@ -8,9 +8,9 @@ VMware workstation, specifically the ```vmware-vdiskmanager.exe``` file.
 
 > [!NOTE]
 > If you have changed the directories mentioned below from their default installations (```C:\LDPlayer\LDPlayer9``` and ```C:\Program Files (x86)\VMware\VMware Workstation```), please refer to the [Manual version](#manual-version) of the instructions and ensure that you update the commands accordingly.
-> If you have not changed the directories, please refer to the [Batch (.bat) files version](#batch).
+> If you have not changed the directories, please refer to the [Batch (.bat) files version](#Batch-(.bat)-files-version).
 
-## Batch (.bat) files version
+### Batch (.bat) files version
 
 > Please note, this process only applies if you have installed the programs in their default installation locations.
 
@@ -21,7 +21,7 @@ VMware workstation, specifically the ```vmware-vdiskmanager.exe``` file.
 
 The vmdk should shrink. If you think it did not shrink enough try repeating the steps again. If you get any errors try the manual version.
 
-## Manual version
+### Manual version
 
 > I'm not sure if it works ideally but you can try skipping to step 13. If that does not work then try the doing steps from the beginning.
 
