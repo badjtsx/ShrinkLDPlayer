@@ -22,7 +22,7 @@ VMware workstation, specifically the ```vmware-vdiskmanager.exe``` file.
 11. Exit the ADB session using ```exit```
 12. Delete the created file using ```adb shell rm /sdcard/fillfile``` (cmd) or ```.\adb shell rm /sdcard/fillfile``` (powershell)
 13. Shut down LDPlayer
-14. Look for where the instance is saved. ```C:\LDPlayer\LDPlayer9\vms``` by deafault (You can tell which is which by the name of the folders (leidian0, leidian1 etc) and the ID in LDMultiPLayer)
+14. Look for where the instance is saved. ```C:\LDPlayer\LDPlayer9\vms``` by default (You can tell which instance is which by the name of the folders (leidian0, leidian1 etc) and the ID in LDMultiPLayer)
 15. Inside of that instance folder there will be three vmdk files, we'll have to shrink the sdcard.vmdk one using ```vmware-vdiskmanager.exe``` which is available in the vmware workstation directory (C:\Program Files (x86)\VMware\VMware Workstation)
 16. Open cmd or powershell and change directory to where ```vmware-vdiskmanager.exe``` is and run ```vmware-vdiskmanager.exe -k "C:\LDPlayer\LDPlayer9\vms\leidian1\sdcard.vmdk"``` (cmd) or ```.\vmware-vdiskmanager.exe -k "C:\LDPlayer\LDPlayer9\vms\leidian1\sdcard.vmdk"``` (powershell)
 
