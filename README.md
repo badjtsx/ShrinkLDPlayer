@@ -40,8 +40,7 @@ The vmdk should shrink. If you think it did not shrink enough try repeating the 
 8. Change directory to sdcard using ```cd /sdcard```.
 9. Create a file filled with zeros using ```dd if=/dev/zero of=fillfile bs=1048576 count=1024```.
 10. Exit out of shell session using ```exit``` (Not necessary).
-11. Exit the ADB session us![Screenshot (161)](https://github.com/badjtsx/ShrinkLDPlayer/assets/90721515/ddd988ba-d9f5-4e02-9151-ac79896160e5)
-ing ```exit``` (Not necessary).
+11. Exit the ADB session using ```exit``` (Not necessary).
 12. Delete the created file using ```adb shell rm /sdcard/fillfile``` (cmd) or ```.\adb shell rm /sdcard/fillfile``` (powershell).
 13. Shut down LDPlayer.
 14. Look for where the instance is saved. ```C:\LDPlayer\LDPlayer9\vms``` by default (You can tell which instance is which by the name of the folders (leidian0, leidian1 etc) and the ID in LDMultiPLayer).
