@@ -16,7 +16,7 @@ VMware workstation, specifically the ```vmware-vdiskmanager.exe``` file.
 > Please note, this process only applies if you have installed the programs in their default installation locations.
 
 1. Launch the LDPlayer instance you want to shrink.
-2. In "Settings > Other settings > ADB debugging" choose "Open local connetion".
+2. In "Settings > Other settings > ADB debugging" choose "Open local connection".
 3. Without closing the emulator, run ```StorageClear.bat```.
 4. Figure out the ID of the LDPlayer instance you want to shrink by going to LDMultiPlayer and checking the IDs.
 ![Screenshot (161)](https://github.com/badjtsx/ShrinkLDPlayer/assets/90721515/2c298fe9-5182-40b0-965c-7e8b0410ee4d)
