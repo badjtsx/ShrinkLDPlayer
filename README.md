@@ -18,13 +18,17 @@ VMware workstation, specifically the ```vmware-vdiskmanager.exe``` file.
 1. Launch the LDPlayer instance you want to shrink.
 2. In "Settings > Other settings > ADB debugging" choose "Open local connetion".
 3. Without closing the emulator, run ```StorageClear.bat```.
-4. Close LDPlayer completely and run ```Shrink.bat```.
+4. Figure out the ID of the LDPlayer instance you want to shrink by going to LDMultiPlayer and checking the IDs.
+![Screenshot (161)](https://github.com/badjtsx/ShrinkLDPlayer/assets/90721515/2c298fe9-5182-40b0-965c-7e8b0410ee4d)
+6. Close LDPlayer completely and run ```Shrink.bat```, it'll ask for the ID acquired in the previous step, 
 
 The vmdk should shrink. If you think it did not shrink enough try repeating the steps again. If you get any errors try the manual version.
 
+
 ### Manual version
 
-> I'm not sure if it works ideally but you can try skipping to step 13. If that does not work then try the doing steps from the beginning.
+> - I'm not sure if it works ideally but you can try skipping to step 13. If that does not work then try the doing steps from the beginning.
+> - You can also refer to [Editing batch files](#editing-batch-files) to make your own batch files
 
 1. Launch the LDPlayer instance you want to shrink.
 2. In "Settings > Other settings > ADB debugging" choose "Open local connetion".
@@ -36,7 +40,8 @@ The vmdk should shrink. If you think it did not shrink enough try repeating the 
 8. Change directory to sdcard using ```cd /sdcard```.
 9. Create a file filled with zeros using ```dd if=/dev/zero of=fillfile bs=1048576 count=1024```.
 10. Exit out of shell session using ```exit``` (Not necessary).
-11. Exit the ADB session using ```exit``` (Not necessary).
+11. Exit the ADB session us![Screenshot (161)](https://github.com/badjtsx/ShrinkLDPlayer/assets/90721515/ddd988ba-d9f5-4e02-9151-ac79896160e5)
+ing ```exit``` (Not necessary).
 12. Delete the created file using ```adb shell rm /sdcard/fillfile``` (cmd) or ```.\adb shell rm /sdcard/fillfile``` (powershell).
 13. Shut down LDPlayer.
 14. Look for where the instance is saved. ```C:\LDPlayer\LDPlayer9\vms``` by default (You can tell which instance is which by the name of the folders (leidian0, leidian1 etc) and the ID in LDMultiPLayer).
@@ -47,4 +52,8 @@ The vmdk should shrink. If you think it did not shrink enough try repeating the 
 
 ## Editing Batch files
 
-Instead of having to repeat the 
+> Instead of following the steps in the [Manual version](#manual-version), you can edit the paths in the batch files.
+
+* In the ```StorageClear.bat``` file, replace ```C:\LDPlayer\LDPlayer9``` with the path to your LDPlayer installation (if there are spaces dont forget the double quotes (ex: ```C:\Path to\LDPlayer``` would be  ```"C:\Path to\LDPlayer"```).
+* In the ```Shrink.bat``` file, replace ```"C:\Program Files (x86)\VMware\VMware Workstation\vmware-vdiskmanager.exe"``` with the path to your ```vmware-vdiskmanager.exe``` file.
+* In the ```Shrink.bat``` file, replace ```"C:\LDPlayer\LDPlayer9\vms\leidian1\sdcard.vmdk"``` with the path to 
