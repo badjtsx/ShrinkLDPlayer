@@ -8,6 +8,7 @@ VMware workstation, specifically the ```vmware-vdiskmanager.exe``` file.
 
 > [!NOTE]
 > If you have changed the directories mentioned below from their default installations, please ensure that you update the commands accordingly.
+> If you have not then you can just run the batch files provided. ```ClearStorage.bat``` first and then ```Shrink.bat```
 
 1. Launch the LDPlayer instance you want to shrink
 2. In "Settings > Other settings > ADB debugging" choose "Open local connetion"
