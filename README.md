@@ -31,7 +31,7 @@ If you get any errors, maybe try the manual version.
 ## Manual version
 
 > - You can also refer to [Editing batch files](#editing-batch-files) to make your own batch files
-> - The vmdk should shrink by 1GB. If you want to shrink it more, you can increase the count in Clear.bat from 1024 (1GB) to a bigger number (You can go overboard, it won't delete files you never deleted).
+> - The vmdk should shrink by 1GB. If you want to shrink it more, you can increase the count in step 9 from 1024 (1GB) to a bigger number (You can go overboard, it won't delete files you never deleted).
 
 1. Launch the LDPlayer instance you want to shrink.
 2. In "Settings > Other settings > ADB debugging" choose "Open local connetion".
