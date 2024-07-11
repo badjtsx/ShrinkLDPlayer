@@ -43,8 +43,8 @@ If you get any errors, maybe try the manual version.
 8. Change directory to sdcard using ```cd /sdcard```.
 9. Create a file filled with zeros using ```dd if=/dev/zero of=fillfile bs=1048576 count=1024```.
 10. Delete the created file using ```rm /sdcard/fillfile``` (cmd) or ```rm /sdcard/fillfile``` (powershell).
-11. Exit out of shell session using ```exit``` (Not necessary).
-12. Exit the ADB session using ```exit``` (Not necessary).
+11. Exit out of shell session using ```exit```.
+12. Exit the ADB session using ```exit```.
 13. Shut down LDPlayer.
 14. Look for where the instance is saved. ```C:\LDPlayer\LDPlayer9\vms``` by default (You can tell which instance is which by the name of the folders (leidian0, leidian1 etc) and the ID in LDMultiPLayer).
 15. Inside of that instance folder there will be three vmdk files, ```system.vmdk``` is the one you probably should not shrink.
