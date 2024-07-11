@@ -6,10 +6,13 @@ VMware workstation, specifically the ```vmware-vdiskmanager.exe``` file.
 
 # Instructions
 
+## Which version to use?
+1. If you have changed the directories mentioned below from their default installations (```C:\LDPlayer\LDPlayer9``` and ```C:\Program Files (x86)\VMware\VMware Workstation```), please refer to the [Manual version](#manual-version) of the instructions and ensure that you update the commands accordingly.
+2. If you have not changed the directories, please refer to the [Batch (.bat) files version](#batch-bat-files-version).
+3. You can also [Edit the batch files](#editing-batch-files) and replace directories with your own.
+
 > [!NOTE]
-> 1. If you have changed the directories mentioned below from their default installations (```C:\LDPlayer\LDPlayer9``` and ```C:\Program Files (x86)\VMware\VMware Workstation```), please refer to the [Manual version](#manual-version) of the instructions and ensure that you update the commands accordingly.
-> 2. You can also [Edit the batch files](#editing-batch-files) and replace directories with your own.
-> 3. If you have not changed the directories, please refer to the [Batch (.bat) files version](#batch-bat-files-version).
+> I recommend using the manual version since it seems to clear more storage.
 
 ## Batch (.bat) files version
 
