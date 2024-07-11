@@ -21,7 +21,9 @@ VMware workstation, specifically the ```vmware-vdiskmanager.exe``` file.
 3. Without closing the emulator, run ```StorageClear.bat```. 
 4. Figure out the ID of the LDPlayer instance you want to shrink by going to LDMultiPlayer and checking the IDs.
 ![Screenshot (161)](https://github.com/badjtsx/ShrinkLDPlayer/assets/90721515/2c298fe9-5182-40b0-965c-7e8b0410ee4d)
-6. Close LDPlayer completely and run ```Shrink.bat```, it'll ask for the ID acquired in the previous step. 
+6. Close LDPlayer completely and run ```Shrink.bat```, it'll ask for the ID acquired in the previous step.
+
+- The same steps apply for the Data version of the batch files (```StorageClearData.bat``` and ```ShrinkData.bat```)
 
 If you get any errors, maybe try the manual version.
 
@@ -45,8 +47,10 @@ If you get any errors, maybe try the manual version.
 12. Delete the created file using ```adb shell rm /sdcard/fillfile``` (cmd) or ```.\adb shell rm /sdcard/fillfile``` (powershell).
 13. Shut down LDPlayer.
 14. Look for where the instance is saved. ```C:\LDPlayer\LDPlayer9\vms``` by default (You can tell which instance is which by the name of the folders (leidian0, leidian1 etc) and the ID in LDMultiPLayer).
-15. Inside of that instance folder there will be three vmdk files, we'll have to shrink the sdcard.vmdk one using ```vmware-vdiskmanager.exe``` which is available in the vmware workstation directory ```C:\Program Files (x86)\VMware\VMware Workstation```.
-16. Open cmd or powershell and change directory to where ```vmware-vdiskmanager.exe``` is and run ```vmware-vdiskmanager.exe -k "C:\LDPlayer\LDPlayer9\vms\leidian1\sdcard.vmdk"``` (cmd) or ```.\vmware-vdiskmanager.exe -k "C:\LDPlayer\LDPlayer9\vms\leidian1\sdcard.vmdk"``` (powershell).
+15. Inside of that instance folder there will be three vmdk files, ```system.vmdk``` is the one you probably should not shrink.
+16. Since in steps 8 and 12 we used the sdcard directory, we'll be shrinking sdcard.vmdk using ```vmware-vdiskmanager.exe``` which is available in the vmware workstation directory ```C:\Program Files (x86)\VMware\VMware Workstation```.
+17. Open cmd or powershell and change directory to where ```vmware-vdiskmanager.exe``` is and run ```vmware-vdiskmanager.exe -k "C:\LDPlayer\LDPlayer9\vms\leidian1\sdcard.vmdk"``` (cmd) or ```.\vmware-vdiskmanager.exe -k "C:\LDPlayer\LDPlayer9\vms\leidian1\sdcard.vmdk"``` (powershell).
+18. To shrink data.vmdk, replace sdcard in steps 8, 12 and 17 with data
 
 Refer to [Editing Batch files](#editing-batch-files) to make your own batch files.
 
@@ -57,8 +61,10 @@ Refer to [Editing Batch files](#editing-batch-files) to make your own batch file
 ### StorageClear.bat file 
 * Replace ```C:\LDPlayer\LDPlayer9``` with the path to your LDPlayer installation (if there are spaces dont forget the double quotes (ex: ```C:\Path to\LDPlayer``` would be  ```"C:\Path to\LDPlayer"```).
 * You can replace 1024 in ```count=1024``` with a bigger number to clear more space (You can go overboard, it won't delete files you never deleted).
+* You can replace ```sdcard``` with ```data``` everywhere in the file to shrink data.vmdk instead of sdcard.vmdk.  
 
 ### Shrink.bat file
 * For VMWare you should replace ```"C:\Program Files (x86)\VMware\VMware Workstation\vmware-vdiskmanager.exe"``` with the path to your ```vmware-vdiskmanager.exe``` file.
 *  For LDPlayer you should replace ```C:\LDPlayer\LDPlayer9\vms\leidian``` with the path to your LDPlayer vms (NOTE: \LDPlayer\LDPlayer9\vms\leidian is unchangeable. This means that, say you installed LDPlayer in your downloads folder, your path should be ```C:\Users\YOUR-USERNAME\Downloads\LDPlayer\LDPlayer9\vms\leidian``` (of course YOUR-USERNAME should be replaced with your username)).
+* You can replace ```sdcard``` with ```data``` everywhere in the file to shrink data.vmdk instead of sdcard.vmdk.  
 * Make sure to set the LDPlayer path with no double quotes since it is getting added in the end.
