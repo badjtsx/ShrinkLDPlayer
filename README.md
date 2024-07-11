@@ -66,5 +66,4 @@ Refer to [Editing Batch files](#editing-batch-files) to make your own batch file
 ### Shrink.bat file
 * For VMWare you should replace ```"C:\Program Files (x86)\VMware\VMware Workstation\vmware-vdiskmanager.exe"``` with the path to your ```vmware-vdiskmanager.exe``` file.
 *  For LDPlayer you should replace ```C:\LDPlayer\LDPlayer9\vms\leidian``` with the path to your LDPlayer vms (NOTE: \LDPlayer\LDPlayer9\vms\leidian is unchangeable. This means that, say you installed LDPlayer in your downloads folder, your path should be ```C:\Users\YOUR-USERNAME\Downloads\LDPlayer\LDPlayer9\vms\leidian``` (of course YOUR-USERNAME should be replaced with your username)).
-* You can replace ```sdcard``` with ```data``` everywhere in the file to shrink data.vmdk instead of sdcard.vmdk.  
 * Make sure to set the LDPlayer path with no double quotes since it is getting added in the end.
