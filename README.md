@@ -49,7 +49,7 @@ If you get any errors, maybe try the manual version.
 14. Look for where the instance is saved. ```C:\LDPlayer\LDPlayer9\vms``` by default (You can tell which instance is which by the name of the folders (leidian0, leidian1 etc) and the ID in LDMultiPLayer).
 15. Inside of that instance folder there will be three vmdk files, ```system.vmdk``` is the one you probably should not shrink.
 16. Since in steps 8 and 12 we used the sdcard directory, we'll be shrinking sdcard.vmdk using ```vmware-vdiskmanager.exe``` which is available in the vmware workstation directory ```C:\Program Files (x86)\VMware\VMware Workstation```.
-17. Open cmd or powershell and change directory to where ```vmware-vdiskmanager.exe``` is and run ```vmware-vdiskmanager.exe -k "C:\LDPlayer\LDPlayer9\vms\leidian1\sdcard.vmdk"``` (cmd) or ```.\vmware-vdiskmanager.exe -k "C:\LDPlayer\LDPlayer9\vms\leidian1\sdcard.vmdk"``` (powershell).
+17. Open cmd or powershell and change directory to where ```vmware-vdiskmanager.exe``` is and run ```vmware-vdiskmanager.exe -k "C:\LDPlayer\LDPlayer9\vms\leidian1\sdcard.vmdk"``` (cmd) or ```.\vmware-vdiskmanager.exe -k "C:\LDPlayer\LDPlayer9\vms\leidian1\sdcard.vmdk"``` (powershell). Don't forget to change "leidian1" depending on the instance you want to shrink.
 18. To shrink data.vmdk, replace sdcard in steps 8, 12 and 17 with data
 
 Refer to [Editing Batch files](#editing-batch-files) to make your own batch files.
