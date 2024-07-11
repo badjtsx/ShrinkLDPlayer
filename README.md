@@ -44,7 +44,7 @@ If you get any errors, maybe try the manual version.
 6. Run ```adb shell``` (cmd) or ```.\adb shell``` (powershell).
 7. Go into superuser using ```su```.
 8. Change directory to sdcard using ```cd /sdcard```.
-9. Create a file filled with zeros using ```dd if=/dev/zero of=fillfile bs=1048576 count=1024```.
+9. Create a file filled with zeros using ```dd if=/dev/zero of=fillfile bs=1048576 count=1024``` (As said above, you can change 1024 (1GB) to a bigger number. Even if the number is bigger than how large the instance is it won't delete anything (This ensures the clearing the most space possible )).
 10. Delete the created file using ```rm /sdcard/fillfile```.
 11. Exit out of shell session using ```exit```.
 12. Exit the ADB session using ```exit```.
