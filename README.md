@@ -45,7 +45,7 @@ If you get any errors, maybe try the manual version.
 7. Go into superuser using ```su```.
 8. Change directory to sdcard using ```cd /sdcard```.
 9. Create a file filled with zeros using ```dd if=/dev/zero of=fillfile bs=1048576 count=1024```.
-10. Delete the created file using ```rm /sdcard/fillfile``` (cmd) or ```rm /sdcard/fillfile``` (powershell).
+10. Delete the created file using ```rm /sdcard/fillfile```.
 11. Exit out of shell session using ```exit```.
 12. Exit the ADB session using ```exit```.
 13. Shut down LDPlayer.
