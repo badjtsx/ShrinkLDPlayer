@@ -2,7 +2,9 @@
 
 ## Pre-Requisites
 
-VMware workstation, specifically the ```vmware-vdiskmanager.exe``` file.
+VMware workstation, specifically the ```vmware-vdiskmanager.exe``` file.\
+> [!NOTE]
+> If you don't have VMware workstation or don't want to download the whole thing, simply use the ```vmware-vdiskmanager.exe``` file from the VdiskManager folder i provided (This is a new addition).
 
 # Instructions
 
