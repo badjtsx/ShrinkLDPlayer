@@ -1,5 +1,9 @@
 # ShrinkLDPlayer
 
+## Note
+
+This also works on other emulators as long as it's a VMDK. If you need help with that, feel free to open an issue.
+
 ## Pre-Requisites
 
 VMware workstation, specifically the ```vmware-vdiskmanager.exe``` file.
