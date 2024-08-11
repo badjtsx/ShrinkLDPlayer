@@ -26,7 +26,7 @@ VMware workstation, specifically the ```vmware-vdiskmanager.exe``` file.
 > - The vmdk should shrink by 1GB. If you want to shrink it more, you can increase the count in Clear.bat from 1024 (1GB) to a bigger number (You can go overboard, it won't delete files you never deleted).
 
 1. Launch the LDPlayer instance you want to shrink.
-2. In "Settings > Other settings > ADB debugging" choose "Open local connection".
+2. In "Settings > Other settings > ADB debugging" choose "Open local connection", also make sure Root Permission is enabled.
 3. Without closing the emulator, run ```StorageClear.bat```. 
 4. Figure out the ID of the LDPlayer instance you want to shrink by going to LDMultiPlayer and checking the IDs.
 ![Screenshot (161)](https://github.com/badjtsx/ShrinkLDPlayer/assets/90721515/2c298fe9-5182-40b0-965c-7e8b0410ee4d)
@@ -43,7 +43,7 @@ If you get any errors, maybe try the manual version.
 > - The vmdk should shrink by 1GB. If you want to shrink it more, you can increase the count in step 9 from 1024 (1GB) to a bigger number (You can go overboard, it won't delete files you never deleted).
 
 1. Launch the LDPlayer instance you want to shrink.
-2. In "Settings > Other settings > ADB debugging" choose "Open local connetion".
+2. In "Settings > Other settings > ADB debugging" choose "Open local connetion", also make sure Root Permission is enabled.
 3. Without closing the emulator, open cmd/powershell.
 4. Change directory to where LDPlayer is installed using ```cd C:\LDPlayer\LDPlayer9```.
 5. Run the command ```adb devices``` (cmd) or ```.\adb devices``` (powershell). If the output lists a device (emulator-5556   device) then you're good to go if not make sure step 2 is done and the LDPlayer instance is Launched.
