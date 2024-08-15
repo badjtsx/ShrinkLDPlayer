@@ -70,7 +70,6 @@ Refer to [Editing Batch files](#editing-batch-files) to make your own batch file
 ### StorageClear.bat file 
 * Replace ```C:\LDPlayer\LDPlayer9``` with the path to your LDPlayer installation (if there are spaces dont forget the double quotes (ex: ```C:\Path to\LDPlayer``` would be  ```"C:\Path to\LDPlayer"```).
 * You can replace 1024 in ```count=1024``` with a bigger number to clear more space (You can go overboard, it won't delete files you never deleted).
-* You can replace ```sdcard``` with ```data``` everywhere in the file to shrink data.vmdk instead of sdcard.vmdk.  
 
 ### Shrink.bat file
 * For VMWare you should replace ```"C:\Program Files (x86)\VMware\VMware Workstation\vmware-vdiskmanager.exe"``` with the path to your ```vmware-vdiskmanager.exe``` file.
