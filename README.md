@@ -13,12 +13,27 @@ VMware workstation, specifically the ```vmware-vdiskmanager.exe``` file.
 # Instructions
 
 ## Which version to use?
+
+### Quick version (requires you to install an app)
+
+1. If you have DiskGenius or are willing to install it, please refer to the [DiskGenius version](#diskgenius-version)
+
+### ADB version 
+
 1. If you have changed the directories mentioned below from their default installations (```C:\LDPlayer\LDPlayer9``` and ```C:\Program Files (x86)\VMware\VMware Workstation```), please refer to the [Manual version](#manual-version) of the instructions and ensure that you update the commands accordingly.
 2. If you have not changed the directories, please refer to the [Batch (.bat) files version](#batch-bat-files-version).
 3. You can also [Edit the batch files](#editing-batch-files) and replace directories with your own.
 
 > [!NOTE]
 > I recommend using the manual version since it seems to clear more storage.
+
+## DiskGenius Version
+1. In DiskGenius, go to ```Disk > Open Virtual Disk File``` and choose the VMDK you want to shrink. (VMDKs are saved at \LDPlayer\LDPlayer9\vms\leidian#, # being the id of the instance (taken from ldmultiplayer), for example leidian1, leidian1 etc.).
+2. Under Partitions, right-click the larger partition and choose ```Erase Free Space```. Keep the settings unchanged and then click Erase.\
+ ![Screenshot (164)](https://github.com/user-attachments/assets/5b8f6826-ac6b-4a9e-ad38-32ac9ae35d73)
+3. Wait until it says Complete instead of Cancel and close the app. (This part might take quite some time and it might look like it's stuck but don't worry, if you see that it's using cpu in task manager then it's still working).
+4. In file explorer, go to where ```vmware-vdiskmanager.exe``` is, right-click and choose open in terminal (or cmd or powershell).
+5. Use the command ```vmware-vdiskmanager.exe -k C:\Path\to\file.vmdk``` (for cmd) or ```& vmware-vdiskmanager.exe -k C:\Path\to\file.vmdk``` (for Powershell) and replace C:\Path\to\file.vmdk with the path to the VMDK you're shrinking.
 
 ## Batch (.bat) files version
 
