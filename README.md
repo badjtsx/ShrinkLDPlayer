@@ -28,7 +28,7 @@ VMware workstation, specifically the ```vmware-vdiskmanager.exe``` file.
 > I recommend using the manual version since it seems to clear more storage.
 
 ## DiskGenius Version
-1. In DiskGenius, go to ```Disk > Open Virtual Disk File``` and choose the VMDK you want to shrink. (VMDKs are saved at \LDPlayer\LDPlayer9\vms\leidian#, # being the id of the instance (taken from ldmultiplayer), for example leidian1, leidian1 etc.).
+1. In DiskGenius, go to ```Disk > Open Virtual Disk File``` and choose the VMDK you want to shrink. (VMDKs are saved at \LDPlayer\LDPlayer9\vms\leidian#, # being the id of the instance (taken from ldmultiplayer), for example leidian0, leidian1 etc.).
 2. Under Partitions, right-click the larger partition and choose ```Erase Free Space```. Keep the settings unchanged and then click Erase.\
  ![Screenshot (164)](https://github.com/user-attachments/assets/5b8f6826-ac6b-4a9e-ad38-32ac9ae35d73)
 3. Wait until it says Complete instead of Cancel and close the app. (This part might take quite some time and it might look like it's stuck but don't worry, if you see that it's using cpu in task manager then it's still working).
